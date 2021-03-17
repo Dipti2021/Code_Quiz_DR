@@ -26,7 +26,7 @@ The quiz asks the player some code related questions and increases the score by 
     In the __third__ situation, a password is generated depending upon the conditions which have been accepted by the user.
  
 
-![password](https://user-images.githubusercontent.com/77368913/110028466-47531a80-7d01-11eb-82c0-976ffdb104a2.gif)
+![quiz](ezgif.com-gif-maker.gif)
 
 
  

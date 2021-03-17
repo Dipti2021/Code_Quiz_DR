@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Quiz_DR</title>
+       <link rel="stylesheet" href="Assets/style.css">
+ 
+    </head>
+
+    <body>
+      <main>
+            <!-- high score button with the timer declarations-->
+            <div id="begin">
+                <div id="top">
+                  <button id="high_score" href="">High Scores</button>
+                  <div id="timer1"><p>Time Left: <span id="timer2">0</span></p></div>
+                </div>
+            </div>
+                
+            <!-- Introductory message-->
+            <div id="topic1">
+              <section id="detail">
+                <h1>Coding Quiz</h1>
+                <p>Presenting is the coding quiz. You will have to complete the quiz in the alloted time.Be careful about the fact that <strong>each incorrect answer</strong> will take <strong> away 5 seconds</strong> of the timer. The quiz will end 
+                  once you have either answered all the questions and the timer will automatically turn to its starting position.
+                </p>
+                <button>Begin</button>
+              
+              </section>
+              
+              <!-- Iquestion and its responses-->
+              <section id="responses" class="hide_1">
+                <p id="quest"></p>
+                  
+                <button id="first"></button>
+                <button id="second"></button>
+                <button id ="third"></button>
+                <button id="fourth"></button>
+                <div id="show_score" class="hide_0">
+                  <p>&nbsp;</p>
+                </div>
+              </section>
+              
+              <!-- ending declarations along with the submit button-->
+              <section id="done" class="hide_1">
+                <h1>Finished! 👏</h1>
+                <p>Your score is: <span id="score"></span></p>
+                <div id="details">
+                  <p>Your initials: </p><input id="init" type="text" placeholder="eg:DR or dr"> <button>Submit</button>
+                </div>
+                <div id="wrong" class="hide_0">
+                  <p>&nbsp;</p>
+                </div>
+              </section>
+              
+
+              <!-- clearing scores and playing again declarations-->
+              <section id="up_score" class="hide_1">
+                <h1>High Scores</h1> <div></div>
+                <button id="reset">Play Again</button>
+                <button id="clear">Clear Scores</button>
+              </section>
+            </div>
+               
+              
+
+      </main>
+        <!-- references to the js files-->
+      <script src="Assets/quiz.js"></script>
+      <script src="Assets/script.js"></script>
+          
+        
+            
+    </body>
+</html>

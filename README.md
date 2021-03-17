@@ -26,7 +26,12 @@ The quiz asks the player some code related questions and increases the score by 
 
 
 The working of the code quiz has been divided into the following parts:
-  *[Beginning of the quiz] : The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. the code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds. We start the quiz by clicking the "Begin" button on the landing page.
+
+FUNCTIONS | USE
+------------ | -------------
+Beginning of the quiz |The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. the code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds. We start the quiz by clicking the "Begin" button on the landing page.
+Content in the first column | Content in the second column
+  
 
  
  ## Installations

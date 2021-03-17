@@ -31,8 +31,8 @@ The quiz asks the player some code related questions and increases the score by 
 
  
  ## Installations
-   * [The URL of the Github repo](https://github.com/Dipti2021/Password_Generator_DR)
-   * [The URL of the deployed application](https://dipti2021.github.io/Password_Generator_DR/)
+   * [The URL of the Github repo](https://github.com/Dipti2021/Code_Quiz_DR)
+   * [The URL of the deployed application](https://dipti2021.github.io/Code_Quiz_DR/)
  
  ## Assignment Details
   The random password generator has been created using HTML, CSS and Javascript to code.The aaplication has been created keeping in mind the following conditions:

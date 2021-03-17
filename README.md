@@ -17,7 +17,7 @@ The quiz asks the player some code related questions and increases the score by 
  The screenshot of the Quiz looks almost similar to the one as shown here.
 
  
- ![Image](assets/Password_screenshot.png)
+ ![Image](Assets/IMG_1771.JPG)
  
  ## Working of the Application
   The below shows video shows how the code will respond to __three__ different situations.

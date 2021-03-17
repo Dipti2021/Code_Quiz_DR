@@ -1,21 +1,20 @@
 # Code_Quiz_DR
-The quiz asks the player some code related questions  and increases the score by one or decreases the time accordingly
+The quiz asks the player some code related questions and increases the score by one for each correct answer or decreases the time by 5 seconds if your answer is incorrect.
 
-I was required to modify the starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected.
 ## Table of Contents
 * [Introduction](#introduction)
-* [Screenshot of the Application](#webpage)
+* [Screenshot of the Quiz](#webpage)
 * [Working of the Application](#web)
 * [Installations](#installations)
 * [Assignment details](#details)
 * [Credits](#credits)
 
  ## Introduction 
-The random password generated has been created keeping in mind various factors. Depending on them, it will present the output for you that has been created by using updated HTML and CSS which are powered by JavaScript code It has a clean and polished, responsive user interface that adapts to multiple screen sizes.
+ The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. the code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds.This quiz is designed to play on a larger and a smaller screen format as well.
  
  
- ## Screenshot of the Application
- The screenshot of the application looks almost similar to the one as shown here.
+ ## Screenshot of the Quiz
+ The screenshot of the Quiz looks almost similar to the one as shown here.
 
  
  ![Image](assets/Password_screenshot.png)

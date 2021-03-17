@@ -10,7 +10,7 @@ The quiz asks the player some code related questions and increases the score by 
 * [Credits](#credits)
 
  ## Introduction 
- The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. the code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds.This quiz is designed to play on a larger and a smaller screen format as well.
+ The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well.The code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds.This quiz is designed to play on a larger and a smaller screen format as well.
  
  
  ## Screenshot of the Quiz
@@ -27,11 +27,13 @@ The quiz asks the player some code related questions and increases the score by 
 
 The working of the code quiz has been divided into the following parts:
 
-FUNCTIONS | USE
+PAGES | FUNCTIONS
 ------------ | -------------
-Beginning of the quiz |The quiz asks the player some code related questions. the questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. the code quiz has 5 questions in total that needs to be answered. for each question, four options will be presented and the player has to select one option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds. We start the quiz by clicking the "Begin" button on the landing page.
-Content in the first column | Content in the second column
-  
+LANDING PAGE |The quiz asks the player some code related questions. The questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. We start the quiz by clicking the "Begin" button on the landing page along with the data that displays the remaining time and score points accumulated as the quiz progresses.
+
+QUESTIONS PAGE | Once the quiz is started, the user is presented with a question, along with 4 possible answers.For each question, 4 options will be presented and the player has to select the correct option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds.
+
+LAST PAGE | Once w e, the user's final score is shown, and a prompt is given for the user to enter their initials. When the "Submit" button is clicked, the initials and score are saved to local storage, so even after the browser is refreshed the score will be saved. The list of saved scores can be seen by clicking the "View High Scores" button.
 
  
  ## Installations

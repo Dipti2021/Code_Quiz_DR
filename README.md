@@ -40,7 +40,7 @@ LAST PAGE | Once the user reaches the last question,after clicking an option for
    * [The URL of the deployed application](https://dipti2021.github.io/Code_Quiz_DR/)
  
  ## Pseudocode 
-   1. timer and score button are created that start at point 0
+   1. Timer and score button are created that start at point 0
    2. Begin button is pressed in order to start the quiz.
    3. As soon as the quiz starts , the timer starts decrementing.
    4. Each question is presented on a new page.
@@ -58,7 +58,7 @@ The quiz has the following codes included
  * One CSS Page: style.css, which included a minimal styling required for the  html code
  * Two JS Pages: script.js and quiz.js, where the first file contains all the necessary declarations, conditions, storage formats and functions while the later has all the    set of questiond required to be answered
 
-  All thhe js and css files are linked to the main html file
+  All the js and css files are linked to the main html file
 
     
  

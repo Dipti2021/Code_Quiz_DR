@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function (){
 	call_el("#high_score").addEventListener("click",function(e){
 		e.preventDefault();
 		clearInterval(start_time);
-		call_el('#time').innerHTML = 0;
+		call_el('#time').innerHTML=0;
 		time = still;
 		score = 0;
 		number = 0;

@@ -31,7 +31,7 @@ PAGES | FUNCTIONS
 ------------ | -------------
 LANDING PAGE |The quiz asks the player some code related questions. The questions are mainly based on Javascript techniques but it has been made using the concepts of HTML and CSS as well. We start the quiz by clicking the "Begin" button on the landing page along with the data that displays the remaining time and score points accumulated as the quiz progresses.
 QUESTIONS PAGE | Once the quiz is started, the user is presented with a question, along with 4 possible answers.For each question, 4 options will be presented and the player has to select the correct option.Each correct answer increments your score by one and every incorrect answer decreases your working time by 5 seconds.
-LAST PAGE | Once w e, the user's final score is shown, and a prompt is given for the user to enter their initials. When the "Submit" button is clicked, the initials and score are saved to local storage, so even after the browser is refreshed the score will be saved. The list of saved scores can be seen by clicking the "View High Scores" button.
+LAST PAGE | Once the user reaches the last question,after clicking an option for it his/her final score is displayed along with a finished prompt. Also, the player is asked to enter their initials if the initials are anything else but alphabets, then he is prompted to enter the correct initials.The current and all the previous scores are stored in the local storage after clicking the Submit button.This list of saved scores can be seen by clicking the "View High Scores" button.
 
  
  ## Installations

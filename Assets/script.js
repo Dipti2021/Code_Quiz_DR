@@ -2,17 +2,17 @@
 //Helping the browser to fully loaded the required HTML files, and to build the DOM tree
 
 document.addEventListener('DOMContentLoaded', function (){
-//creating required  global variables
-   var details_line = [];
+ //creating required  global variables
+   var recordsArray = [];
    var still = 60;
-	var timer2 = 60;
+	var time = 60;
 	var score = 0;
 	var number = 0;
 	var timer;
 	var answers = document.querySelectorAll('#responses button');
 	// exchanging data(to and from) and after receiving the string data, convert it into a js file
-	(localStorage.getItem('details_line'))?details_line = JSON.parse(localStorage.getItem('details_line')): details_line = [];
-
+  (localStorage.getItem('recordsArray')) ? recordsArray = JSON.parse(localStorage.getItem('recordsArray')): recordsArray = [];
+  
 	
 	// declaration for hiding and unhiding the arguments as and when required
 	var show_hidden= function(element){
@@ -25,9 +25,10 @@ document.addEventListener('DOMContentLoaded', function (){
 
 	// function declaration to start the display again by resetting the score
 	var start_display = function(){
-        call_el('#up_score div').innerHTML = ""; var i = 1;
-		details_line.sort((x, y) => y.score - x.score);
-		Array.from(details_line).forEach(function(check)
+        call_el('#up_score div').innerHTML = ""; 
+		var i = 1;
+		recordsArray.sort((x, y) => y.score - x.score);
+		Array.from(recordsArray).forEach(function(check)
 		{
 			var high_score = document.createElement("div");
 			high_score.innerHTML = i + ". " + check.start_data + " - " + check.score;
@@ -63,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function (){
 		// when time is out, leave the the questions section
 		setTimeout(function(){
 			if (number === questions.length) {
-				show_hidden("#done");timer2 = 0;
-				call_el('#timer2').innerHTML =timer2;
+				show_hidden("#done");time = 0;
+				call_el('#time').innerHTML =time;
 			} else {
 				no_of_ques();
 				Array.from(answers).forEach(function(answer) {
@@ -76,9 +77,9 @@ document.addEventListener('DOMContentLoaded', function (){
 
 	// changing or decreasing the time as the quiz progresses
 	var new_time = function(){
-		if (timer2 > 0) {
-			timer2--;
-			call_el('#timer2').innerHTML = timer2;
+		if (time > 0) {
+			time--;
+			call_el('#time').innerHTML = time;
 		} else {
 			clearInterval(start_time);
 			call_el('#score').innerHTML = score;
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function (){
 				comment("Correct Choice &#128519");
 			}else{
 				
-				timer2 = timer2 - 5;number++;
+				time = time - 5;number++;
 				comment("Wrong Answer &#128532");
 			}
 		});
@@ -137,9 +138,9 @@ document.addEventListener('DOMContentLoaded', function (){
 		} else if (start_data.match(/[[A-Za-z]/) === null) {
 			call_el('#wrong p').innerHTML = "Enter the initials of your name"; call_el('#wrong').classList.remove('hide_0',incorrect());
 		} else { 
-			details_line.push({"start_data": start_data,"score": score});
+			recordsArray.push({"start_data": start_data,"score": score});
 			//local storage 
-			localStorage.setItem('details_line', JSON.stringify(details_line));
+			localStorage.setItem('recordsArray', JSON.stringify(recordsArray));
 			call_el('#up_score div').innerHTML = '';show_hidden("#up_score");start_display();call_el("#init").value = '';
 		}
 	});
@@ -150,29 +151,30 @@ document.addEventListener('DOMContentLoaded', function (){
 	// when the quiz ends various functions for clearing the highscores(if you want)from all the locations
 	call_el("#clear").addEventListener("click", function(){
 		details_line = [];call_el('#up_score div').innerHTML = "";
-		localStorage.removeItem('details_line');
+		localStorage.removeItem('recordsArray');
 	});
 
 
 	// if you want to see your high scores accumulated till now
-	call_el("#high_score").addEventListener("click", function(z){
-		z.preventDefault();
+	call_el("#high_score").addEventListener("click",function(e){
+		e.preventDefault();
 		clearInterval(start_time);
-		call_el('#timer2').innerHTML = 0;
-		timer2 = still;
+		call_el('#time').innerHTML = 0;
+		time = still;
 		score = 0;
 		number = 0;
 		show_hidden("#up_score");
 		start_display();
 	});
-
+  
 	// after clearing,restart the quiz again from the start time and score along with the introductory message
 	call_el("#reset").addEventListener("click",function(){
-		timer2 = still;
+		time = still;
 		score = 0;
 		number  = 0;
 		show_hidden("#detail");
 	});
 
 });
+
 

@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function (){
 	var new_time = function(){
 		if (time > 0) {
 			time--;
-			call_el('#time').innerHTML = time;
+			call_el('#time').innerHTML=time;
 		} else {
 			clearInterval(start_time);
 			call_el('#score').innerHTML = score;

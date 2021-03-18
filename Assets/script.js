@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function (){
  //creating required  global variables
-   var recordsArray = [];
+   var details_line = [];
    var still = 60;
 	var time = 60;
 	var score = 0;
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (){
 	var timer;
 	var answers = document.querySelectorAll('#responses button');
 	// exchanging data(to and from) and after receiving the string data, convert it into a js file
-  (localStorage.getItem('recordsArray')) ? recordsArray = JSON.parse(localStorage.getItem('recordsArray')): recordsArray = [];
+  (localStorage.getItem('details_line')) ? details_line = JSON.parse(localStorage.getItem('details_line')): details_line = [];
   
 	
 	// declaration for hiding and unhiding the arguments as and when required
@@ -138,9 +138,9 @@ document.addEventListener('DOMContentLoaded', function (){
 		} else if (start_data.match(/[[A-Za-z]/) === null) {
 			call_el('#wrong p').innerHTML = "Enter the initials of your name"; call_el('#wrong').classList.remove('hide_0',incorrect());
 		} else { 
-			recordsArray.push({"start_data": start_data,"score": score});
+			details_line.push({"start_data": start_data,"score": score});
 			//local storage 
-			localStorage.setItem('recordsArray', JSON.stringify(recordsArray));
+			localStorage.setItem('details_line', JSON.stringify(details_line));
 			call_el('#up_score div').innerHTML = '';show_hidden("#up_score");start_display();call_el("#init").value = '';
 		}
 	});
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function (){
 	// when the quiz ends various functions for clearing the highscores(if you want)from all the locations
 	call_el("#clear").addEventListener("click", function(){
 		details_line = [];call_el('#up_score div').innerHTML = "";
-		localStorage.removeItem('recordsArray');
+		localStorage.removeItem('details_line');
 	});
 
 

@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function (){
 	// if you want to see your high scores accumulated till now
 	call_el("#high_score").addEventListener("click", function(z){
 		z.preventDefault();
-		clearInterval(clock);
+		clearInterval(start_time);
 		call_el('#timer2').innerHTML = 0;
 		timer2 = still;
 		score = 0;

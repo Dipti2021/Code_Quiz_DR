@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function (){
 	var start_display = function(){
         call_el('#up_score div').innerHTML = ""; 
 		var i = 1;
-		recordsArray.sort((x, y) => y.score - x.score);
-		Array.from(recordsArray).forEach(function(check)
+		details_line.sort((x, y) => y.score - x.score);
+		Array.from(details_line).forEach(function(check)
 		{
 			var high_score = document.createElement("div");
 			high_score.innerHTML = i + ". " + check.start_data + " - " + check.score;
